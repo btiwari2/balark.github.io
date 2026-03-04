@@ -1,0 +1,467 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Balark Tiwari · Portfolio</title>
+    <meta
+      name="description"
+      content="Portfolio of Balark Tiwari · Robotics, Controls, AI & Digital Manufacturing · Research, Projects, Publications & Experience."
+    >
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    >
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container header-inner">
+        <a class="logo" href="#top">
+          <span class="logo-mark">BT</span>
+          <span class="logo-text">Balark Tiwari</span>
+        </a>
+        <nav class="nav">
+          <button class="nav-toggle" aria-label="Toggle navigation">
+            <span class="nav-toggle-bar"></span>
+            <span class="nav-toggle-bar"></span>
+          </button>
+          <ul class="nav-list">
+            <li><a href="#about">About</a></li>
+            <li><a href="#research">Research</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#publications">Publications</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </nav>
+        <button class="theme-toggle" id="theme-toggle" aria-label="Toggle dark mode">
+          <span class="theme-toggle-icon">◐</span>
+        </button>
+      </div>
+    </header>
+
+    <main id="top">
+      <section class="hero">
+        <div class="container hero-inner">
+          <div class="hero-text">
+            <p class="eyebrow">PhD researcher · Robotics &amp; controls · Digital manufacturing</p>
+            <h1>PhD researcher in robotics, controls, and intelligent manufacturing.</h1>
+            <p class="hero-subtitle">
+              I design and deploy real-time control, sensing, and learning systems for
+              manufacturing robots, with a focus on digital glass and metal forming.
+            </p>
+            <div class="hero-actions">
+              <a href="#projects" class="button button-primary">View projects</a>
+              <a href="#contact" class="button button-ghost">Get in touch</a>
+            </div>
+            <dl class="hero-metrics">
+              <div>
+                <dt>Focus</dt>
+                <dd>Manufacturing robotics, real-time control, AI-driven processes</dd>
+              </div>
+              <div>
+                <dt>Work style</dt>
+                <dd>From modeling and simulation to hardware-in-the-loop deployment</dd>
+              </div>
+            </dl>
+          </div>
+          <div class="hero-panel">
+            <div class="hero-card">
+              <h2>Technical highlights</h2>
+              <ul>
+                <li>Model-based and learning-based control</li>
+                <li>Motion planning and state estimation</li>
+                <li>Perception for industrial environments</li>
+                <li>Simulation-to-reality transfer</li>
+              </ul>
+            </div>
+            <div class="hero-card secondary">
+              <h3>Current interests</h3>
+              <ul>
+                <li>Robust autonomy in unstructured factories</li>
+                <li>Human-in-the-loop control and planning</li>
+                <li>Data-driven optimization of manufacturing lines</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="about" class="section">
+        <div class="container section-inner">
+          <header class="section-header">
+            <h2>About</h2>
+            <p>
+              I am a PhD researcher in Mechanical Engineering at the University of Notre Dame,
+              focusing on manufacturing robotics, real-time control systems, and AI-driven
+              digital forming processes.
+            </p>
+          </header>
+          <div class="two-column">
+            <div>
+              <h3>What I care about</h3>
+              <p>
+                I enjoy building systems that close the loop between perception, decision making,
+                and actuation. My work spans algorithm design, real-time implementation, and
+                experimental validation on robotic cells for glass and metal forming.
+              </p>
+            </div>
+            <div>
+              <h3>Areas of expertise</h3>
+              <ul class="pill-list">
+                <li>Real-time control &amp; ILC</li>
+                <li>Reinforcement learning for robotics</li>
+                <li>Vision-language &amp; vision-language-action models</li>
+                <li>Computer vision &amp; multi-modal sensing</li>
+                <li>Digital glass &amp; metal forming</li>
+                <li>Robotics &amp; exoskeleton intent recognition</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="research" class="section section-alt">
+        <div class="container section-inner">
+          <header class="section-header">
+            <h2>Research</h2>
+            <p>
+              My research focuses on intelligent manufacturing robotics, combining real-time
+              control, learning, and perception for digital glass and metal forming processes
+              and human-centered systems.
+            </p>
+          </header>
+          <div class="card-grid">
+            <article class="card">
+              <h3>Digital glass forming with learning-based control</h3>
+              <p>
+                Real-time thermal control for volumetric laser-heated digital glass forming,
+                combining system identification, z-domain tracking control, iterative learning
+                control, and vision-language-action policies for anomaly-aware adaptation.
+              </p>
+              <ul class="tag-list">
+                <li>Real-time control</li>
+                <li>Reinforcement learning</li>
+                <li>VLM/VLA</li>
+                <li>Iterative learning control</li>
+              </ul>
+            </article>
+            <article class="card">
+              <h3>Vision-based digital metal forming</h3>
+              <p>
+                Vision-based tracking of tool deflection and part morphology in dieless digital
+                metal forming, using computer vision, force, and motion feedback to enable
+                adaptive springback compensation with iterative learning control.
+              </p>
+              <ul class="tag-list">
+                <li>Computer vision</li>
+                <li>Iterative learning control</li>
+                <li>EtherCAT</li>
+              </ul>
+              <div class="project-media">
+                <video
+                  class="project-video"
+                  controls
+                  preload="metadata"
+                  autoplay
+                  muted
+                  loop
+                >
+                  <source
+                    src="videos/Video%20Computer%20Vision%20Implementation.mp4"
+                    type="video/mp4"
+                  >
+                  Your browser does not support the video tag.
+                </video>
+              </div>
+            </article>
+            <article class="card">
+              <h3>User intent recognition for exoskeletons</h3>
+              <p>
+                LSTM-based intent recognition for EksoGT exoskeletons using IMU and force
+                sensor streams, supporting human-in-the-loop control for assistive gait.
+              </p>
+              <ul class="tag-list">
+                <li>LSTMs</li>
+                <li>Human-robot interaction</li>
+                <li>Time-series modeling</li>
+              </ul>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="projects" class="section">
+        <div class="container section-inner">
+          <header class="section-header">
+            <h2>Projects</h2>
+            <p>
+              Selected robotics and controls projects spanning digital forming, human-centered
+              systems, and autonomous platforms. Each project below is designed to be paired
+              with short videos or keyframes.
+            </p>
+          </header>
+          <div class="card-grid">
+            <article class="card">
+              <header class="card-header">
+                <h3>Digital glass forming</h3>
+                <span class="card-meta">Advanced manufacturing · Real-time control</span>
+              </header>
+              <p>
+                Built a real-time C++/rt-preempt Linux controller for volumetric laser-heated
+                digital glass forming, fusing thermal, visual, and motion feedback to achieve
+                precise temperature tracking and robust defect reduction.
+              </p>
+              <ul class="tag-list">
+                <li>Real-time control</li>
+                <li>Thermal imaging</li>
+                <li>Reinforcement learning</li>
+                <li>VLM/VLA</li>
+              </ul>
+              <div class="project-media">
+                <!-- Replace with your own media files -->
+                <video
+                  class="project-video"
+                  controls
+                  preload="metadata"
+                  poster="assets/digital-glass-forming-thumb.jpg"
+                >
+                  <source src="assets/digital-glass-forming-demo.mp4" type="video/mp4">
+                  Your browser does not support the video tag.
+                </video>
+              </div>
+            </article>
+            <article class="card">
+              <header class="card-header">
+                <h3>Digital metal forming</h3>
+                <span class="card-meta">Computer vision · Iterative learning control</span>
+              </header>
+              <p>
+                Created an OpenCV-based pipeline for tool deflection and part shape estimation,
+                integrated with an iterative learning controller to iteratively update forming
+                trajectories and compensate for springback in dieless forming.
+              </p>
+              <ul class="tag-list">
+                <li>Computer vision</li>
+                <li>Iterative learning control</li>
+                <li>EtherCAT</li>
+              </ul>
+              <div class="project-media">
+                <video
+                  class="project-video"
+                  controls
+                  preload="metadata"
+                  autoplay
+                  muted
+                  loop
+                >
+                  <source
+                    src="videos/Video%20Animation%20Digital%20Twin.mp4"
+                    type="video/mp4"
+                  >
+                  Your browser does not support the video tag.
+                </video>
+              </div>
+              <p class="project-link">
+                <a
+                  href="https://www.youtube.com/playlist?list=PLfl3ZF-3ffa-kR1An6hmrz5EZQrlviJGU"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  Watch the full Digital Metal Forming playlist on YouTube
+                </a>
+              </p>
+            </article>
+            <article class="card">
+              <header class="card-header">
+                <h3>User intent recognition for EksoGT</h3>
+                <span class="card-meta">Human-in-the-loop control · Gait analysis</span>
+              </header>
+              <p>
+                Implemented stacked LSTM classifiers on EksoGT IMU and force sensor data to
+                predict user intent across assistive and control conditions, with analysis of
+                feature importance and performance across subject groups.
+              </p>
+              <ul class="tag-list">
+                <li>LSTMs</li>
+                <li>Time-series analysis</li>
+                <li>Exoskeleton control</li>
+              </ul>
+              <div class="project-media">
+                <img
+                  src="assets/eksogt-intent-recognition.jpg"
+                  alt="Visualization of EksoGT exoskeleton user intent recognition experiment"
+                >
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="publications" class="section section-alt">
+        <div class="container section-inner">
+          <header class="section-header">
+            <h2>Publications</h2>
+            <p>
+              Selected publications and intellectual property from my work in digital
+              manufacturing and robotic control.
+            </p>
+          </header>
+          <ul class="pub-list">
+            <li>
+              <span class="pub-title">
+                Systems and Methods of Printing 3D Lattices
+              </span>
+              <span class="pub-meta">
+                PCT International Patent Application PCT/US2026/010502 · 2026 · University
+                of Notre Dame (assignee)
+              </span>
+            </li>
+            <li>
+              <span class="pub-title">
+                Development of a Digital Metal Forming System
+              </span>
+              <span class="pub-meta">
+                ASME International Symposium on Flexible Automation (ISFA) · 2024
+              </span>
+              <a
+                class="pub-link"
+                href="https://doi.org/10.1115/ISFA2024-141140"
+                target="_blank"
+                rel="noreferrer"
+              >
+                View paper
+              </a>
+            </li>
+            <li>
+              <span class="pub-title">
+                Real Time Vision-Based Morphology Tracking of Glass Additive Manufacturing Processes
+              </span>
+              <span class="pub-meta">
+                Solid Freeform Fabrication (SFF) Symposium · 2025
+              </span>
+              <a
+                class="pub-link"
+                href="https://utw10945.utweb.utexas.edu/2025-table-contents"
+                target="_blank"
+                rel="noreferrer"
+              >
+                Conference proceedings
+              </a>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <section id="experience" class="section">
+        <div class="container section-inner">
+          <header class="section-header">
+            <h2>Experience</h2>
+            <p>
+              Roles spanning research, teaching, and industry, focused on robotics, controls,
+              and data-driven decision making.
+            </p>
+          </header>
+          <div class="timeline">
+            <article class="timeline-item">
+              <div class="timeline-dot"></div>
+              <div class="timeline-content">
+                <h3>Graduate Research Assistant – Robotics · University of Notre Dame</h3>
+                <p class="timeline-meta">Notre Dame, United States · 2021 – Present</p>
+                <p>
+                  Lead research on manufacturing robotics and real-time control systems in the
+                  Advanced Manufacturing Laboratory, including digital glass and metal forming,
+                  learning-based controllers, and multi-modal sensing pipelines.
+                </p>
+              </div>
+            </article>
+            <article class="timeline-item">
+              <div class="timeline-dot"></div>
+              <div class="timeline-content">
+                <h3>Graduate Teaching Assistant · University of Notre Dame</h3>
+                <p class="timeline-meta">Notre Dame, United States · 2021 – 2024</p>
+                <p>
+                  Supported courses in mechanics, dynamics, vibrations, and controls while
+                  mentoring students on hands-on servo control, motion interpolation, and
+                  trajectory planning projects.
+                </p>
+              </div>
+            </article>
+            <article class="timeline-item">
+              <div class="timeline-dot"></div>
+              <div class="timeline-content">
+                <h3>Research Analyst, Strategy &amp; Marketing · The Smart Cube</h3>
+                <p class="timeline-meta">Delhi, India · 2018 – 2019</p>
+                <p>
+                  Conducted industry profiling, competitive landscape analysis, and market
+                  trend studies for global consulting and Fortune 100 clients, delivering
+                  data-driven insights for strategic decision making.
+                </p>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="contact" class="section section-alt">
+        <div class="container section-inner">
+          <header class="section-header">
+            <h2>Contact</h2>
+            <p>
+              If you would like to talk about robotics, controls, AI, or digital
+              manufacturing, feel free to reach out.
+            </p>
+          </header>
+          <div class="contact-grid">
+            <div>
+              <h3>Reach out</h3>
+              <ul class="contact-list">
+                <li>
+                  <span>Email</span>
+                  <a href="mailto:btiwari2@nd.edu">btiwari2@nd.edu</a>
+                </li>
+                <li>
+                  <span>GitHub</span>
+                  <a href="https://github.com/btiwari2" target="_blank" rel="noreferrer">
+                    github.com/btiwari2
+                  </a>
+                </li>
+                <li>
+                  <span>LinkedIn</span>
+                  <a
+                    href="https://www.linkedin.com/in/balarktiwari"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    linkedin.com/in/balarktiwari
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <div>
+              <h3>Notes</h3>
+              <p>
+                This is a static site hosted on GitHub Pages. You can update the content of
+                each section directly in the HTML, or hook it up to a static site generator
+                later if your portfolio grows.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <p>&copy; <span id="year"></span> Balark Tiwari. All rights reserved.</p>
+        <p class="footer-tagline">Portfolio · Robotics · Controls · AI · Digital Manufacturing</p>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
+

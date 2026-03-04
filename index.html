@@ -30,8 +30,8 @@
           </button>
           <ul class="nav-list">
             <li><a href="#about">About</a></li>
-            <li><a href="#research">Research</a></li>
             <li><a href="#projects">Projects</a></li>
+            <li><a href="#research">Research</a></li>
             <li><a href="#publications">Publications</a></li>
             <li><a href="#experience">Experience</a></li>
             <li><a href="#contact">Contact</a></li>
@@ -124,76 +124,6 @@
         </div>
       </section>
 
-      <section id="research" class="section section-alt">
-        <div class="container section-inner">
-          <header class="section-header">
-            <h2>Research</h2>
-            <p>
-              My research focuses on intelligent manufacturing robotics, combining real-time
-              control, learning, and perception for digital glass and metal forming processes
-              and human-centered systems.
-            </p>
-          </header>
-          <div class="card-grid">
-            <article class="card">
-              <h3>Digital glass forming with learning-based control</h3>
-              <p>
-                Real-time thermal control for volumetric laser-heated digital glass forming,
-                combining system identification, z-domain tracking control, iterative learning
-                control, and vision-language-action policies for anomaly-aware adaptation.
-              </p>
-              <ul class="tag-list">
-                <li>Real-time control</li>
-                <li>Reinforcement learning</li>
-                <li>VLM/VLA</li>
-                <li>Iterative learning control</li>
-              </ul>
-            </article>
-            <article class="card">
-              <h3>Vision-based digital metal forming</h3>
-              <p>
-                Vision-based tracking of tool deflection and part morphology in dieless digital
-                metal forming, using computer vision, force, and motion feedback to enable
-                adaptive springback compensation with iterative learning control.
-              </p>
-              <ul class="tag-list">
-                <li>Computer vision</li>
-                <li>Iterative learning control</li>
-                <li>EtherCAT</li>
-              </ul>
-              <div class="project-media">
-                <video
-                  class="project-video"
-                  controls
-                  preload="metadata"
-                  autoplay
-                  muted
-                  loop
-                >
-                  <source
-                    src="videos/Video%20Computer%20Vision%20Implementation.mp4"
-                    type="video/mp4"
-                  >
-                  Your browser does not support the video tag.
-                </video>
-              </div>
-            </article>
-            <article class="card">
-              <h3>User intent recognition for exoskeletons</h3>
-              <p>
-                LSTM-based intent recognition for EksoGT exoskeletons using IMU and force
-                sensor streams, supporting human-in-the-loop control for assistive gait.
-              </p>
-              <ul class="tag-list">
-                <li>LSTMs</li>
-                <li>Human-robot interaction</li>
-                <li>Time-series modeling</li>
-              </ul>
-            </article>
-          </div>
-        </div>
-      </section>
-
       <section id="projects" class="section">
         <div class="container section-inner">
           <header class="section-header">
@@ -222,14 +152,15 @@
                 <li>VLM/VLA</li>
               </ul>
               <div class="project-media">
-                <!-- Replace with your own media files -->
                 <video
-                  class="project-video"
+                  class="project-video project-video-wide"
                   controls
                   preload="metadata"
-                  poster="assets/digital-glass-forming-thumb.jpg"
                 >
-                  <source src="assets/digital-glass-forming-demo.mp4" type="video/mp4">
+                  <source
+                    src="videos/Video%20Machine%20Demonstration.mp4"
+                    type="video/mp4"
+                  >
                   Your browser does not support the video tag.
                 </video>
               </div>
@@ -296,6 +227,92 @@
                   alt="Visualization of EksoGT exoskeleton user intent recognition experiment"
                 >
               </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="research" class="section section-alt">
+        <div class="container section-inner">
+          <header class="section-header">
+            <h2>Research</h2>
+            <p>
+              My research focuses on intelligent manufacturing robotics, combining real-time
+              control, learning, and perception for digital glass and metal forming processes
+              and human-centered systems.
+            </p>
+          </header>
+          <div class="card-grid">
+            <article class="card">
+              <h3>Digital glass forming with learning-based control</h3>
+              <p>
+                Real-time thermal control for volumetric laser-heated digital glass forming,
+                combining system identification, z-domain tracking control, iterative learning
+                control, and vision-language-action policies for anomaly-aware adaptation.
+              </p>
+              <ul class="tag-list">
+                <li>Real-time control</li>
+                <li>Reinforcement learning</li>
+                <li>VLM/VLA</li>
+                <li>Iterative learning control</li>
+              </ul>
+              <div class="project-media">
+                <video
+                  class="project-video"
+                  controls
+                  preload="metadata"
+                  autoplay
+                  muted
+                  loop
+                >
+                  <source
+                    src="videos/Video%20Visual%20Camera%20Wall%20Fabrication.mp4"
+                    type="video/mp4"
+                  >
+                  Your browser does not support the video tag.
+                </video>
+              </div>
+            </article>
+            <article class="card">
+              <h3>Vision-based digital metal forming</h3>
+              <p>
+                Vision-based tracking of tool deflection and part morphology in dieless digital
+                metal forming, using computer vision, force, and motion feedback to enable
+                adaptive springback compensation with iterative learning control.
+              </p>
+              <ul class="tag-list">
+                <li>Computer vision</li>
+                <li>Iterative learning control</li>
+                <li>EtherCAT</li>
+              </ul>
+              <div class="project-media">
+                <video
+                  class="project-video"
+                  controls
+                  preload="metadata"
+                  autoplay
+                  muted
+                  loop
+                >
+                  <source
+                    src="videos/Video%20Computer%20Vision%20Implementation.mp4"
+                    type="video/mp4"
+                  >
+                  Your browser does not support the video tag.
+                </video>
+              </div>
+            </article>
+            <article class="card">
+              <h3>User intent recognition for exoskeletons</h3>
+              <p>
+                LSTM-based intent recognition for EksoGT exoskeletons using IMU and force
+                sensor streams, supporting human-in-the-loop control for assistive gait.
+              </p>
+              <ul class="tag-list">
+                <li>LSTMs</li>
+                <li>Human-robot interaction</li>
+                <li>Time-series modeling</li>
+              </ul>
             </article>
           </div>
         </div>

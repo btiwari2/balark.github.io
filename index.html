@@ -274,6 +274,59 @@
                 </a>
               </p>
             </article>
+            <article class="card">
+              <header class="card-header">
+                <h3>KUKA iiwa 7-DOF manipulator control</h3>
+                <span class="card-meta">Robotics · Nonlinear control</span>
+              </header>
+              <p>
+                As part of AME-50551 (Robotics Course at ND), modeled a 7-DOF KUKA iiwa arm
+                using URDF and Denavit-Hartenberg parameters, built forward kinematics via
+                homogeneous coordinate transformations, and implemented custom numerical inverse
+                kinematics in SE(3) using the manipulator Jacobian and damped least-squares.
+                Designed smooth joint-space trajectories from task-space waypoints and used a
+                computed-torque (model-based) controller, leveraging full robot dynamics (mass
+                matrix, Coriolis, gravity) from MATLAB's Robotics System Toolbox, to accurately
+                track paths over an aircraft fuselage and around a bowl rim. The project
+                demonstrates end-to-end capability in manipulator modeling, kinematics,
+                trajectory generation, and nonlinear control, with results visualized as 3D
+                simulations suitable for deployment to real hardware.
+              </p>
+              <ul class="tag-list">
+                <li>Robot kinematics</li>
+                <li>Inverse kinematics</li>
+                <li>Trajectory planning</li>
+                <li>Computed-torque control</li>
+                <li>Robot simulation</li>
+                <li>MATLAB</li>
+                <li>URDF</li>
+              </ul>
+              <div class="project-media">
+                <video
+                  class="project-video"
+                  controls
+                  preload="metadata"
+                  autoplay
+                  muted
+                  loop
+                >
+                  <source
+                    src="videos/Video%20Intro%20to%20Robotics%20Course%20Project%20KUKA%20Robot.mp4"
+                    type="video/mp4"
+                  >
+                  Your browser does not support the video tag.
+                </video>
+              </div>
+              <p class="project-link">
+                <a
+                  href="https://github.com/btiwari2/MATLAB-Robot-Kinematics-and-Simulations-KUKA"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  View the KUKA Robot Kinematics source code on GitHub
+                </a>
+              </p>
+            </article>
           </div>
         </div>
       </section>

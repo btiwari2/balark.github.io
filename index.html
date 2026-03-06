@@ -228,6 +228,52 @@
                 >
               </div>
             </article>
+            <article class="card">
+              <header class="card-header">
+                <h3>CUDA PIC two-stream instability</h3>
+                <span class="card-meta">GPU computing · Plasma simulation</span>
+              </header>
+              <p>
+                Developed a CUDA-accelerated (C/C++) electrostatic particle-in-cell (PIC) code
+                simulating the two-stream instability with 40,000 particles. Custom GPU kernels
+                for the Jacobi Poisson solver, grid-to-particle field interpolation, and
+                thread-synchronized iterative convergence achieved a 12x speedup over the serial
+                CPU implementation.
+              </p>
+              <ul class="tag-list">
+                <li>C</li>
+                <li>C++</li>
+                <li>CUDA</li>
+                <li>GPU computing</li>
+                <li>Parallel computing</li>
+                <li>Numerical methods</li>
+              </ul>
+              <div class="project-media">
+                <video
+                  class="project-video"
+                  controls
+                  preload="metadata"
+                  autoplay
+                  muted
+                  loop
+                >
+                  <source
+                    src="videos/Video%20CUDA%20PIC%20Two%20Stream%20Solution.mp4"
+                    type="video/mp4"
+                  >
+                  Your browser does not support the video tag.
+                </video>
+              </div>
+              <p class="project-link">
+                <a
+                  href="https://github.com/btiwari2/CUDA-PIC-Solver/"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  View the CUDA PIC Solver source code on GitHub
+                </a>
+              </p>
+            </article>
           </div>
         </div>
       </section>

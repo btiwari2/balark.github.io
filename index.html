@@ -6,7 +6,7 @@
     <title>Balark Tiwari · Portfolio</title>
     <meta
       name="description"
-      content="Portfolio of Balark Tiwari · Robotics, Controls, AI & Digital Manufacturing · Research, Projects, Publications & Experience."
+      content="Portfolio of Balark Tiwari · Robotics, Controls, AI & Digital Manufacturing · Selected projects, publications & experience."
     >
     <link rel="stylesheet" href="styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -30,8 +30,7 @@
           </button>
           <ul class="nav-list">
             <li><a href="#about">About</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#research">Research</a></li>
+            <li><a href="#projects">Selected projects</a></li>
             <li><a href="#publications">Publications</a></li>
             <li><a href="#experience">Experience</a></li>
             <li><a href="#coursework">Coursework</a></li>
@@ -55,7 +54,7 @@
               manufacturing robots, with a focus on digital glass and metal forming.
             </p>
             <div class="hero-actions">
-              <a href="#projects" class="button button-primary">View projects</a>
+              <a href="#projects" class="button button-primary">View selected projects</a>
               <a href="#contact" class="button button-ghost">Get in touch</a>
             </div>
             <dl class="hero-metrics">
@@ -128,19 +127,25 @@
       <section id="projects" class="section">
         <div class="container section-inner">
           <header class="section-header">
-            <h2>Projects</h2>
+            <h2>Selected projects</h2>
             <p>
-              Selected robotics and controls projects spanning digital forming, human-centered
-              systems, and autonomous platforms. Each project below is designed to be paired
-              with short videos or keyframes.
+              Robotics and controls work spanning digital forming, human-centered systems, and
+              related platforms—research threads and build-focused projects, often with short
+              videos or keyframes.
             </p>
           </header>
           <div class="card-grid">
             <article class="card">
               <header class="card-header">
-                <h3>Digital glass forming</h3>
+                <h3>Digital glass forming with learning-based control</h3>
+                <span class="card-meta">Learning-based control · VLM/VLA · ILC</span>
                 <span class="card-meta">Advanced manufacturing · Real-time control</span>
               </header>
+              <p>
+                Real-time thermal control for volumetric laser-heated digital glass forming,
+                combining system identification, z-domain tracking control, iterative learning
+                control, and vision-language-action policies for anomaly-aware adaptation.
+              </p>
               <p>
                 Built a real-time C++/rt-preempt Linux controller for volumetric laser-heated
                 digital glass forming, fusing thermal, visual, and motion feedback to achieve
@@ -148,10 +153,27 @@
               </p>
               <ul class="tag-list">
                 <li>Real-time control</li>
-                <li>Thermal imaging</li>
                 <li>Reinforcement learning</li>
                 <li>VLM/VLA</li>
+                <li>Iterative learning control</li>
+                <li>Thermal imaging</li>
               </ul>
+              <div class="project-media">
+                <video
+                  class="project-video"
+                  controls
+                  preload="metadata"
+                  autoplay
+                  muted
+                  loop
+                >
+                  <source
+                    src="videos/Video%20Visual%20Camera%20Wall%20Fabrication.mp4"
+                    type="video/mp4"
+                  >
+                  Your browser does not support the video tag.
+                </video>
+              </div>
               <div class="project-media">
                 <video
                   class="project-video project-video-wide"
@@ -168,9 +190,14 @@
             </article>
             <article class="card">
               <header class="card-header">
-                <h3>Digital metal forming</h3>
+                <h3>Vision-based digital metal forming</h3>
                 <span class="card-meta">Computer vision · Iterative learning control</span>
               </header>
+              <p>
+                Vision-based tracking of tool deflection and part morphology in dieless digital
+                metal forming, using computer vision, force, and motion feedback to enable
+                adaptive springback compensation with iterative learning control.
+              </p>
               <p>
                 Created an OpenCV-based pipeline for tool deflection and part shape estimation,
                 integrated with an iterative learning controller to iteratively update forming
@@ -197,6 +224,22 @@
                   Your browser does not support the video tag.
                 </video>
               </div>
+              <div class="project-media">
+                <video
+                  class="project-video"
+                  controls
+                  preload="metadata"
+                  autoplay
+                  muted
+                  loop
+                >
+                  <source
+                    src="videos/Video%20Computer%20Vision%20Implementation.mp4"
+                    type="video/mp4"
+                  >
+                  Your browser does not support the video tag.
+                </video>
+              </div>
               <p class="project-link">
                 <a
                   href="https://www.youtube.com/playlist?list=PLfl3ZF-3ffa-kR1An6hmrz5EZQrlviJGU"
@@ -205,6 +248,53 @@
                 >
                   Watch the full Digital Metal Forming playlist on YouTube
                 </a>
+              </p>
+            </article>
+            <article class="card">
+              <header class="card-header">
+                <h3>ISF metal embossing &amp; sheet forming</h3>
+                <span class="card-meta">Manufacturing automation · Motion &amp; sensing</span>
+              </header>
+              <p>
+                Integrated a Schunk Alpha 2D linear stage with
+                Yaskawa Σ-7 servo motion for coordinated 3-axis embossing and
+                incremental sheet forming (ISF). Closed the loop with
+                quadrature differential encoders on NI DAQmx,
+                added Botasys MegaONE force data over RS232 for force
+                control, and converted CAD/front-surface geometry into executable paths—
+                producing a leaf motif and an embossed pattern based on Notre Dame’s
+                Main Building on sheet metal.
+              </p>
+              <ul class="tag-list">
+                <li>Incremental sheet forming (ISF)</li>
+                <li>Yaskawa Sigma-7</li>
+                <li>Differential ABZ Encoder</li>
+                <li>Variable Frequency Drive</li>
+                <li>CAD to path</li>
+                <li>System identification</li>
+                <li>Tracking control</li>
+              </ul>
+              <div class="project-media">
+                <img
+                  src="videos/Image%20DMF%20ISF%20Project%20Process%20and%20Parts.png"
+                  alt="ISF metal embossing and incremental sheet forming: process setup and fabricated sheet-metal parts"
+                >
+              </div>
+              <p class="project-link">
+                <a
+                  href="https://asmedigitalcollection.asme.org/ISFA/proceedings-abstract/ISFA2024/87882/V001T05A006/1204966"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  Paper: Development of a Digital Metal Forming System<span
+                    class="project-link-arrow"
+                    aria-hidden="true"
+                  >
+                    →</span>
+                </a>
+                <span class="project-link-meta">
+                  ASME International Symposium on Flexible Automation (ISFA) · 2024
+                </span>
               </p>
             </article>
             <article class="card">
@@ -327,80 +417,6 @@
                   View the KUKA Robot Kinematics source code on GitHub
                 </a>
               </p>
-            </article>
-          </div>
-        </div>
-      </section>
-
-      <section id="research" class="section section-alt">
-        <div class="container section-inner">
-          <header class="section-header">
-            <h2>Research</h2>
-            <p>
-              My research focuses on intelligent manufacturing robotics, combining real-time
-              control, learning, and perception for digital glass and metal forming processes
-              and human-centered systems.
-            </p>
-          </header>
-          <div class="card-grid">
-            <article class="card">
-              <h3>Digital glass forming with learning-based control</h3>
-              <p>
-                Real-time thermal control for volumetric laser-heated digital glass forming,
-                combining system identification, z-domain tracking control, iterative learning
-                control, and vision-language-action policies for anomaly-aware adaptation.
-              </p>
-              <ul class="tag-list">
-                <li>Real-time control</li>
-                <li>Reinforcement learning</li>
-                <li>VLM/VLA</li>
-                <li>Iterative learning control</li>
-              </ul>
-              <div class="project-media">
-                <video
-                  class="project-video"
-                  controls
-                  preload="metadata"
-                  autoplay
-                  muted
-                  loop
-                >
-                  <source
-                    src="videos/Video%20Visual%20Camera%20Wall%20Fabrication.mp4"
-                    type="video/mp4"
-                  >
-                  Your browser does not support the video tag.
-                </video>
-              </div>
-            </article>
-            <article class="card">
-              <h3>Vision-based digital metal forming</h3>
-              <p>
-                Vision-based tracking of tool deflection and part morphology in dieless digital
-                metal forming, using computer vision, force, and motion feedback to enable
-                adaptive springback compensation with iterative learning control.
-              </p>
-              <ul class="tag-list">
-                <li>Computer vision</li>
-                <li>Iterative learning control</li>
-                <li>EtherCAT</li>
-              </ul>
-              <div class="project-media">
-                <video
-                  class="project-video"
-                  controls
-                  preload="metadata"
-                  autoplay
-                  muted
-                  loop
-                >
-                  <source
-                    src="videos/Video%20Computer%20Vision%20Implementation.mp4"
-                    type="video/mp4"
-                  >
-                  Your browser does not support the video tag.
-                </video>
-              </div>
             </article>
             <article class="card">
               <h3>User intent recognition for exoskeletons</h3>

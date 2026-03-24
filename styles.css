@@ -6,6 +6,11 @@
   --color-border-subtle: rgba(148, 163, 184, 0.3);
   --color-accent: #38bdf8;
   --color-accent-soft: rgba(56, 189, 248, 0.12);
+  --color-pill-bg: rgba(6, 10, 18, 0.72);
+  --color-pill-border: rgba(255, 255, 255, 0.06);
+  --color-pill-text: #9ca3b8;
+  --color-link-warm: #f3e8c8;
+  --color-link-warm-hover: #fff5de;
   --color-text: #e5e7eb;
   --color-text-soft: #9ca3af;
   --color-text-strong: #f9fafb;
@@ -402,14 +407,19 @@ a {
 }
 
 .card {
-  border-radius: var(--radius-md);
-  padding: 1.1rem 1.1rem 1.05rem;
-  background: radial-gradient(circle at top left, #020617, #020617);
-  border: 1px solid rgba(31, 41, 55, 0.95);
+  border-radius: 18px;
+  padding: 1.15rem 1.2rem 1.1rem;
+  background: linear-gradient(
+    155deg,
+    #171e2f 0%,
+    #101624 48%,
+    #0a0d14 100%
+  );
+  border: 1px solid rgba(55, 65, 90, 0.45);
   box-shadow: 0 16px 30px rgba(15, 23, 42, 0.7);
   display: flex;
   flex-direction: column;
-  gap: 0.55rem;
+  gap: 0.65rem;
 }
 
 .card-header {
@@ -437,19 +447,21 @@ a {
 .tag-list {
   list-style: none;
   padding: 0;
-  margin: 0.25rem 0 0;
+  margin: 0.35rem 0 0;
   display: flex;
   flex-wrap: wrap;
-  gap: 0.3rem;
+  gap: 0.45rem;
 }
 
 .tag-list li {
-  font-size: 0.76rem;
-  padding: 0.15rem 0.6rem;
+  font-size: 0.78rem;
+  font-weight: 450;
+  letter-spacing: 0.01em;
+  padding: 0.38rem 0.85rem;
   border-radius: var(--radius-pill);
-  background: var(--color-accent-soft);
-  color: #e0f2fe;
-  border: 1px solid rgba(56, 189, 248, 0.3);
+  background: var(--color-pill-bg);
+  color: var(--color-pill-text);
+  border: 1px solid var(--color-pill-border);
 }
 
 .project-media {
@@ -506,12 +518,39 @@ a {
 }
 
 .project-link {
-  margin-top: 0.4rem;
-  font-size: 0.82rem;
+  margin-top: 0.85rem;
+  font-size: 0.81rem;
+  line-height: 1.5;
 }
 
 .project-link a {
-  color: var(--color-accent);
+  color: var(--color-link-warm);
+  text-decoration: none;
+  font-weight: 500;
+  transition: color var(--transition-fast);
+}
+
+.project-link a:hover {
+  color: var(--color-link-warm-hover);
+}
+
+.project-link a:focus-visible {
+  outline: 2px solid var(--color-link-warm);
+  outline-offset: 3px;
+  border-radius: 4px;
+}
+
+.project-link-meta {
+  display: block;
+  margin-top: 0.4rem;
+  font-size: 0.74rem;
+  font-weight: 400;
+  color: var(--color-text-soft);
+  line-height: 1.4;
+}
+
+.project-link-arrow {
+  white-space: nowrap;
 }
 
 .coursework-layout {
